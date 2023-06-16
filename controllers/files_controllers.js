@@ -1,4 +1,3 @@
-const { json } = require('express');
 const asyncHandler = require('express-async-handler');
 
 // @desc download spesifik file

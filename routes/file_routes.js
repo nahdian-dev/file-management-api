@@ -1,4 +1,4 @@
-const route = require('express').Router()
+const route = require('express').Router();
 const { downloadFile, uploadFile, editFile, deleteFile, listFile } = require('../controllers/files_controllers')
 
 // unduh

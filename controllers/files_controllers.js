@@ -1,4 +1,5 @@
 const asyncHandler = require('express-async-handler');
+const fs = require('fs');
 
 // @desc download spesifik file
 // @route GET- /api/download/:id
@@ -19,7 +20,7 @@ const uploadFile = asyncHandler(async (req, res) => {
     res.json({
         message: 'Berhasil upload file!'
     });
-})
+});
 
 // @desc perbarui file
 // @route PUT- /api/edit/:id

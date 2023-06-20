@@ -14,13 +14,17 @@
                 File Management
             </div>
             <div class="row card-body">
-
                 <div class="col">
                     <div class="d-flex align-items-center h-100">
                         <div class="row">
-                            <input class="form-control" type="file" id="formFile">
-                            <label for="formFile" class="form-label" style="font-size: 12px;">*hanya pdf, docx,
-                                txt</label>
+                            <form action="/api/upload" method="post" enctype="multipart/form-data">
+                                <input class="form-control" type="file" id="formFile" name="uploaded_file">
+                                <label for="formFile" class="form-label" style="font-size: 12px;">*hanya
+                                    pdf,
+                                    docx,
+                                    txt</label>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -30,7 +34,7 @@
                     <div style="height: 90%;">
                         <div class="table-responsive" style="max-height: 300px; overflow-y: auto;">
                             <table class="table">
-                                <thead>
+                                <thead class="text-center">
                                     <tr>
                                         <th scope="col">No</th>
                                         <th scope="col">File Name</th>
@@ -38,19 +42,18 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <% for(let i=1; i<=20; i++){ %>
-                                        <tr>
-                                            <th scope="row">
-                                                <%= i %>
-                                            </th>
-                                            <td style="min-width: 190px; max-width: 200px; ">Dokumen Pemeriksaan
-                                                Identitas.pdf </td>
-                                            <td>
-                                                <button type="button" class="btn btn-danger">Delete</button>
-                                                <button type="button" class="btn btn-primary">Edit</button>
-                                            </td>
-                                        </tr>
-                                        <% } %>
+                                    <tr>
+                                        <th scope="row">
+                                            1
+                                        </th>
+                                        <td style="min-width: 190px; max-width: 200px; ">
+                                            FIle Ilang!
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger">Delete</button>
+                                            <button type="button" class="btn btn-primary">Edit</button>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>

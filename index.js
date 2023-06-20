@@ -13,8 +13,8 @@ connectDB();
 app.set('view engine', 'ejs');
 
 // Routing
-app.use('/views', require('./routes/views_route'));
 app.use('/api', require('./routes/file_routes'));
+app.use('/views', require('./routes/views_route'));
 
 // Error Handling
 app.use(routeNotFound);

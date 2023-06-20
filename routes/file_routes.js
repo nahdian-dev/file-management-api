@@ -1,19 +1,20 @@
 const route = require('express').Router();
-const { downloadFile, uploadFile, editFile, deleteFile, listFile } = require('../controllers/files_controllers')
+const single_file_uploaded = require('../controllers/upload_controllers');
+const { downloadFile, uploadFile, editFile, deleteFile, listFile } = require('../controllers/files_controllers');
 
 // unduh
-route.get('/download/:id', downloadFile)
+route.get('/download/:id', downloadFile);
 
 // unggah
-route.post('/upload', uploadFile)
+route.post('/upload', single_file_uploaded, uploadFile);
 
 // perbarui
-route.put('/edit/:id', editFile)
+route.put('/edit/:id', editFile);
 
 // hapus
-route.delete('/delete/:id', deleteFile)
+route.delete('/delete/:id', deleteFile);
 
 // daftar file
-route.get('/list-file', listFile)
+route.get('/list-file', listFile);
 
-module.exports = route
+module.exports = route;

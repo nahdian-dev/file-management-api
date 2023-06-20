@@ -11,7 +11,14 @@ const downloadFile = asyncHandler(async (req, res) => {
 // @route POST- /api/upload
 // @access public
 const uploadFile = asyncHandler(async (req, res) => {
+    if (!req.file) {
+        res.status(400);
+        throw new Error('Nothing to Upload!');
+    }
 
+    res.json({
+        message: 'Berhasil upload file!'
+    });
 })
 
 // @desc perbarui file

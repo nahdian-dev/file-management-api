@@ -1,5 +1,3 @@
-
-
 // @desc menampilkan menu utama
 // @route GET - /views/homepage
 // @access public

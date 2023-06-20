@@ -6,18 +6,61 @@
 </head>
 
 <body>
-    <%- include('../partials/navbar.ejs') %>
 
-        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-        </button>
+    <div class="container-fluid d-flex justify-content-center align-items-center"
+        style="background-color: blue; height: 100vh;">
+        <div class="container card w-75" style="height: 80%;">
+            <div class="card-header text-center mt-2">
+                File Management
+            </div>
+            <div class="row card-body">
 
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Item 1</a>
-            <a class="dropdown-item" href="#">Item 2</a>
-            <a class="dropdown-item" href="#">Item 3</a>
+                <div class="col">
+                    <div class="d-flex align-items-center h-100">
+                        <div class="row">
+                            <input class="form-control" type="file" id="formFile">
+                            <label for="formFile" class="form-label" style="font-size: 12px;">*hanya pdf, docx,
+                                txt</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h5>FILE LIST</h5>
+                    <div style="height: 90%;">
+                        <div class="table-responsive" style="max-height: 300px; overflow-y: auto;">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">File Name</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(let i=1; i<=20; i++){ %>
+                                        <tr>
+                                            <th scope="row">
+                                                <%= i %>
+                                            </th>
+                                            <td style="min-width: 190px; max-width: 200px; ">Dokumen Pemeriksaan
+                                                Identitas.pdf </td>
+                                            <td>
+                                                <button type="button" class="btn btn-danger">Delete</button>
+                                                <button type="button" class="btn btn-primary">Edit</button>
+                                            </td>
+                                        </tr>
+                                        <% } %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
 
 </body>
 

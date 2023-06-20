@@ -16,9 +16,6 @@ app.set('view engine', 'ejs');
 app.use('/views', require('./routes/views_route'));
 app.use('/api', require('./routes/file_routes'));
 
-// Middleware akses file statis
-app.use('/node_modules', express.static('node_modules'));
-
 // Error Handling
 app.use(routeNotFound);
 app.use(errorHandler);

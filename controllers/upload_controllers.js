@@ -1,7 +1,5 @@
 const fs = require('fs');
-const path = require('path');
 const multer = require('multer');
-const Joi = require('joi');
 
 const date = new Date();
 const today = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear();

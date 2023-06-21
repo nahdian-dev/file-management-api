@@ -30,13 +30,20 @@ const uploadFile = asyncHandler(async (req, res) => {
         file: Joi.string().required().pattern(new RegExp('.txt$')),
     });
 
-    const { error, value } = schema.validate({ file: req.file });
+    const { error, value } = schema.validate({ file: req.file.filename });
 
     if (error) {
         res.status(400);
         fs.unlinkSync(req.file.path);
         throw new Error(error.details[0].message);
     }
+
+    File.create({
+        name: req.file.filename,
+        size: req.file.size,
+        path: req.file.path,
+        createdAt: Date.now()
+    });
 
     res.json({
         message: 'Berhasil upload file!',

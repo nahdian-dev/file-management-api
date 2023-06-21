@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
+const Joi = require('joi');
 
 const date = new Date();
 const today = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear();
@@ -30,7 +31,7 @@ if (fs.existsSync(`./repositories/${today}`)) {
     });
 }
 
-const upload = multer({ storage: storage });
+const upload = multer({ storage: storage, limits: { fileSize: 1024 * 1024 } });
 
 // SINGLE FILE UPLOAD
 const single_file_uploaded = upload.single('uploaded_file');

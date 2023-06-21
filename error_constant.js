@@ -7,6 +7,6 @@ const errorConstant = {
     INTERNAL_SERVER_ERROR: 500, // Kesalahan server, cth: bug atau kondisi lain
     SERVICE_UNAVAILABLE: 503, // Server tidak tersedia / maintenance
     GATEWAY_TIMEOUT: 504 // Server tidak bisa merespon dalam waktu yang ditentukan
-}
+};
 
-module.exports = errorConstant
+module.exports = errorConstant;

@@ -66,11 +66,4 @@ const deleteFile = asyncHandler(async (req, res) => {
 
 })
 
-// @desc get list file
-// @route GET - /api/list-file
-// @access public
-const listFile = asyncHandler(async (req, res) => {
-
-})
-
-module.exports = { downloadFile, uploadFile, editFile, deleteFile, listFile }
+module.exports = { downloadFile, uploadFile, editFile, deleteFile }

@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const File = require('../models/file_model');
 const Joi = require('joi');
 const fs = require('fs');
+const path = require('path');
 
 // @desc download spesifik file
 // @route GET- /api/download/:id
@@ -63,7 +64,31 @@ const editFile = asyncHandler(async (req, res) => {
 // @route DELETE - /api/delete/:id
 // @access public
 const deleteFile = asyncHandler(async (req, res) => {
+    const file = await File.findById(req.params.id);
 
-})
+    if (!file) {
+        res.status(400);
+        throw new Error('Cannot find a request file!');
+    }
+
+    try {
+        await File.findByIdAndRemove(req.params.id);
+        fs.unlinkSync(file.path);
+
+        res.json({
+            message: 'Berhasil delete file!',
+            file_details: {
+                name: req.file.filename,
+                size: req.file.size,
+                path: req.file.path
+            }
+        });
+    } catch (error) {
+        res.status(400);
+        throw new Error(error);
+    }
+
+
+});
 
 module.exports = { downloadFile, uploadFile, editFile, deleteFile }

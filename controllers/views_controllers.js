@@ -12,7 +12,7 @@ const homepage = async (req, res) => {
             const array = result.map(data => data.toObject());
 
             array.forEach(function (items) {
-                data.push(items.name);
+                data.push(items);
             });
         })
         .catch((error) => {

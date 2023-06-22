@@ -21,18 +21,13 @@ const uploadFile = asyncHandler(async (req, res) => {
         throw new Error('Nothing to Upload!');
     }
 
-    const date = new Date();
-    const today = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear();
-    const times = date.getHours() + '.' + date.getMinutes();
-
-    const filename = today + '-' + times + ' - ' + req.file.originalname;
-
     const schema = Joi.object({
         file: Joi.string().required().pattern(new RegExp('.txt$')),
     });
 
     const { error, value } = schema.validate({ file: req.file.filename });
 
+    // Error handling extension file
     if (error) {
         res.status(400);
         fs.unlinkSync(req.file.path);

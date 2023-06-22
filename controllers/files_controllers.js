@@ -1,9 +1,6 @@
 const asyncHandler = require('express-async-handler');
-const mongoose = require('mongoose');
 const File = require('../models/file_model');
-const Joi = require('joi');
 const fs = require('fs');
-const path = require('path');
 
 // @desc download spesifik file
 // @route GET- /api/download/:id
@@ -21,19 +18,6 @@ const uploadFile = asyncHandler(async (req, res) => {
         throw new Error('Nothing to Upload!');
     }
 
-    const schema = Joi.object({
-        file: Joi.string().required().pattern(new RegExp('.txt$')),
-    });
-
-    const { error, value } = schema.validate({ file: req.file.filename });
-
-    // Error handling extension file
-    if (error) {
-        res.status(400);
-        fs.unlinkSync(req.file.path);
-        throw new Error(error.details[0].message);
-    }
-
     File.create({
         name: req.file.filename,
         size: req.file.size,
@@ -43,8 +27,10 @@ const uploadFile = asyncHandler(async (req, res) => {
 
     res.json({
         message: 'Berhasil upload file!',
-        value: value,
-        file_details: req.file
+        name: req.file.filename,
+        size: req.file.size,
+        path: req.file.path,
+        createdAt: Date.now()
     });
 });
 

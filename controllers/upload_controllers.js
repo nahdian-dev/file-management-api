@@ -6,15 +6,24 @@ const date = new Date();
 const today = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear();
 const times = date.getHours() + '.' + date.getMinutes();
 
-if (!fs.existsSync(path.join('repositories', `${today}`))) {
-    fs.mkdirSync(path.join('repositories', `${today}`));
-}
-
 const fileFilter = function (req, file, cb) {
-    if (fs.existsSync(path.join('repositories', `${today}`, `${today}` + '-' + `${times}` + ' - ' + file.originalname))) {
-        cb(new Error('File already exists!'), false);
-    } else {
+    const allowedExtension = ['.txt'];
+    const fileExtension = path.extname(file.originalname);
+
+    if (!fs.existsSync(path.join('repositories', `${today}`))) {
+        fs.mkdirSync(path.join('repositories', `${today}`));
+    }
+
+    if (!fs.existsSync(path.join('repositories', `${today}`, `${today}` + '-' + `${times}` + ' - ' + file.originalname))) {
         cb(null, true); // Terima file
+    } else {
+        cb(new Error('File already exists!'), false);
+    }
+
+    if (allowedExtension.includes(fileExtension)) {
+        cb(null, true); // Terima file
+    } else {
+        cb(new Error('File type not allowed!'), false);
     }
 }
 

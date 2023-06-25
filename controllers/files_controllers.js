@@ -4,10 +4,17 @@ const fs = require('fs');
 
 // @desc download spesifik file
 // @route GET- /api/download/:id
-// @access private
+// @access public
 const downloadFile = asyncHandler(async (req, res) => {
-    res.send({ message: 'Download file routes' })
-})
+    const data = await File.findById(req.params.id);
+
+    res.download(data.path, (err) => {
+        if (err) {
+            res.status(400);
+            throw new Error(err);
+        }
+    });
+});
 
 // @desc unggah file
 // @route POST- /api/upload
@@ -45,30 +52,30 @@ const editFile = asyncHandler(async (req, res) => {
 // @route DELETE - /api/delete/:id
 // @access public
 const deleteFile = asyncHandler(async (req, res) => {
-    const file = await File.findById(req.params.id);
+    const fileId = await File.findById(req.params.id);
 
-    if (!file) {
+    if (!fileId) {
         res.status(400);
         throw new Error('Cannot find a request file!');
     }
 
-    try {
-        await File.findByIdAndRemove(req.params.id);
-        fs.unlinkSync(file.path);
+    await File.findByIdAndRemove(req.params.id)
+        .then(() => {
+            fs.unlinkSync(fileId.path);
+        })
+        .catch((err) => {
+            res.status(400);
+            throw new Error(err);
+        })
 
-        res.json({
-            message: 'Berhasil delete file!',
-            file_details: {
-                name: req.file.filename,
-                size: req.file.size,
-                path: req.file.path
-            }
-        });
-    } catch (error) {
-        res.status(400);
-        throw new Error(error);
-    }
-
+    res.status(200).json({
+        message: 'Berhasil delete file!',
+        file_details: {
+            name: req.file.filename,
+            size: req.file.size,
+            path: req.file.path
+        }
+    });
 
 });
 

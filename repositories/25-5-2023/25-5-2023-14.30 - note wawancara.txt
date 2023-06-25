@@ -1,0 +1,100 @@
+Personal Informasi
+- Perkenalkan nama, lulusan, pengalaman magang, fokus saat ini
+
+- Mengembangkan dan me-maintenance user-interface pada website belanjabareng.id 
+  dengan menggunakan Framework Bootstrap, serta HTML dan JavaScript dengan tujuan 
+  memastikan setiap user atau pengujung website dapat berinteraksi dengan mudah dan nyaman.
+
+- Mengintegrasikan dan menampilkan data yang telah disediakan baik pada database maupun REST API 
+  menggunakan kerangka kerja Laravel sehingga website dapat memberikan informasi yang lengkap 
+  terhadap user atau pengguna.
+  
+KELEBIHAN DAN KEKURANGAN
+- Kelebihan : menguasai flutter
+				- dapat mengembangkan dan memaintenance user-interface pada mobile apps
+				- dapat melakukan http request
+				- dapat bekerja menggunakan firebase
+
+- Kekurangan : pengalaman kerja yang masih minim,
+				solusi: mencoba mengulik, setiap progress update di github
+				
+
+GAJI : 6.000.000
+
+kenapa sistem informasi ?
+- karena minat pada dunia pemrograman
+- pemrograman dapat membantu menyelesaikan masalah atau sesuatu hal yang rumit
+- pemrograman dapat menunjang produktifitas
+	contoh: ? 
+	
+perbedaan sistem informasi dan teknologi informasi ?
+- sistem informasi fokus pada pengembangan sebuah aplikasi,
+	sistem informasi unggul dalam perancangan aplikasi, hingga evaluasi sistem
+	
+- teknologi informasi fokus pada pengelolaan subsistem ( pengembangan berbasis komputer )
+	teknologi informasi unggul dalam kecerdasan buatan, jaringan berbasis komputer
+	
+Software engineer :
+software engineer bertugas melakukan analisa, membuat rekayasa,
+mengimplementasikan dan memvalidasi suatu rancangan sistem perangkat lunak untuk menjawab suatu permasalahan.
+
+Algoritma :
+sekumpulan intruksi yang digunakan untuk memecahkan masalah
+	Flowchart, 
+	
+GRCP (Google remote procedure call):
+Kerangka kerja digunakan untuk membuat API
+	Golang, Node Js
+	
+Event Stream
+Event 		 : Suatu keadaan / kondisi yang bisa dideteksi
+	contoh : Sensor temperatur disebuah manufaktur yang mengukur kondisi suhu setiap 10 detik.
+Event Stream : Event yang diorder / di urutkan berdasarkan waktu tanpa batas
+
+Kegunaan : membantu analis untuk mendeteksi data secara real-time
+
+contoh :
+	- bank menerapkan event stream untuk notifikasi saldo dibawah standar
+	- sistem akan mendeteksi event 
+	
+Langkah dalam membuat program ?
+- Metode SDLC (software development life cycle): proses pembuatan atau pengubahan sistem untuk membangun
+  perangkat lunak
+ 
+- Waterfall
+	setiap fase yang dilakukan berurutan dan sistematis
+		1. pengumpulan kebutuhan dan analisis
+			melalui proses wawancara, diskusi, atau survey
+			
+		2. design
+			perancangan design
+			pembuatan flowchart, mind map, atau erp diagram
+		
+		3. implementasi
+			pengubahan seluruh design yang dibuat menjadi kode - kode atau program
+			
+		4. integration dan testing
+			diuji untuk mengetahui perangkat lunak sesuai
+			
+		5. operation dan maintenance
+			proses ini untuk memperbaiki kesalahan2 atau bug pada aplikasi
+			
+- Agile metode ( pendekatan scrum ) : mengacu pada seperangkat metode dan praktik berdasarkan nilai dan prinsip 
+										yang diungkapkan dalam Agile Manifesto.
+		1. tentukan tim 5-10 orang
+		2. menentukan waktu pengerjaan / sprint => serangkaian pekerjaan untuk menyelesaikan masalah
+		3. menentukan peran dalam tim / scrum master => pekerja yang bertanggung jawab untuk memastikan 
+														bahwa tim proyek sudah beroperasi seefektif mungkin 
+														dengan nilai-nilai Scrum.
+		4. mengumpulkan berbagai permasalahan untuk dijadikan prioritas pekerjaan
+		5. memulai sprint
+		
+MAGANG
+
+Tantangan :
+	- dituntut harus dapat menyeimbangkan faktor estetika dan praktis dalam sebuah website
+		sehingga sebuah website dapat nyaman dipandang dan mudah digunakan
+		
+PERUSAHAAN
+perusahaan logistic digital pertama di Indonesia berbasis teknologi
+didirikan pada tahun 2021

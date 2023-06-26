@@ -56,16 +56,15 @@
                                                 <%= items.name %>
                                             </td>
                                             <td style="max-width: 150px;">
-
-                                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                                                    data-bs-target="#myModal" style="font-size: 10px;">
-                                                    Delete
-                                                </button>
+                                                <button type="button" class="btn btn-danger btn-open-modal"
+                                                    data-bs-target="#myModal" data-id="<%= items._id %>"
+                                                    data-name=" <%= items.name %>"
+                                                    style="font-size: 10px;">Delete</button>
 
                                                 <!-- Modal -->
                                                 <div class="modal fade" id="myModal" tabindex="-1"
                                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
+                                                    <div class="modal-dialog" role="document">
                                                         <div class="modal-content">
                                                             <!-- Header Modal -->
                                                             <div class="modal-header">
@@ -77,17 +76,16 @@
 
                                                             <!-- Konten Modal -->
                                                             <div class="modal-body">
-                                                                <p>Are you sure want to delete <%= items.name %> ?</p>
+                                                                <p>Are you sure want to delete <span
+                                                                        id="modalIdValue"></span> ?</p>
                                                             </div>
 
                                                             <!-- Footer Modal -->
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary"
                                                                     data-bs-dismiss="modal">Close</button>
-
-                                                                <button id="btn-delete-file" data-id="<%= items._id %>"
-                                                                    type="button" class="btn btn-danger">Delete</button>
-
+                                                                <button id="btn-delete-file" type="button"
+                                                                    class="btn btn-danger">Delete</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -95,10 +93,8 @@
 
                                                 <a href="/views/edit/<%= items._id%>" class="btn btn-primary"
                                                     style="font-size: 10px;">Edit</a>
-
                                                 <a href="/api/download/<%= items._id%>" class="btn btn-primary"
                                                     style="font-size: 10px;">Download</a>
-
                                             </td>
                                         </tr>
                                         <% });%>
@@ -111,24 +107,30 @@
         </div>
     </div>
 
+
     <script>
         $.noConflict();
 
         // DELETE FILE
         jQuery(document).ready(function ($) {
-            $('#btn-delete-file').click(function () {
-                var id = $(this).data("id");
+            $('.btn-open-modal').click(function () {
+                let id = $(this).data('id');
+                let name = $(this).data('name');
+                $('#modalIdValue').text(name);
+                $('#myModal').modal('show');
 
-                $.ajax({
-                    type: "DELETE",
-                    url: "/api/delete/" + id,
-                    success: function () {
-                        $("#myModal").modal("hide");
-                        location.reload();
-                    },
-                    error: function () {
-                        alert('Failed to Delete File!');
-                    }
+                $('#btn-delete-file').click(function () {
+                    $.ajax({
+                        type: "DELETE",
+                        url: "/api/delete/" + id,
+                        success: function () {
+                            $("#myModal").modal("hide");
+                            location.reload();
+                        },
+                        error: function () {
+                            alert('Failed to Delete File!');
+                        }
+                    });
                 });
             });
         });

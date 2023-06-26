@@ -45,6 +45,24 @@ const uploadFile = asyncHandler(async (req, res) => {
 // @route PUT- /api/edit/:id
 // @access public
 const editFile = asyncHandler(async (req, res) => {
+
+    const get_file_data = await File.findById(req.params.id);
+    const newData = req.body.myData;
+
+    fs.readFile(get_file_data.path, 'utf-8', (err, data) => {
+        if (err) {
+            console.log(err);
+        };
+
+        const result = data.replace(data, newData);
+
+        fs.writeFile(get_file_data.path, result, (err) => {
+            if (err) return console.error(err);
+
+            res.status(200).redirect('/views/homepage');
+        });
+    });
+
 });
 
 // @desc hapus file

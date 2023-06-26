@@ -27,7 +27,7 @@ const edit = async (req, res) => {
     const file = await File.findById(req.params.id);
     const fileValue = fs.readFileSync(file.path, { encoding: 'utf-8' });
 
-    res.render('pages/edit', { fileValue: fileValue });
+    res.render('pages/edit', { file: file, fileValue: fileValue });
 }
 
 module.exports = { homepage, edit };

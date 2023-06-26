@@ -11,13 +11,28 @@
 
         <div class="card w-100 h-75 mx-5">
             <div class="card-header">
-                <div class="d-flex justify-content-end">
-                    <a href="/views/homepage" class="mx-1 btn btn-outline-info" style="font-size: 10px;">Back</a>
-                    <a class="mx-1 btn btn-outline-secondary clear-text" style="font-size: 10px;">Clear</a>
-                    <a class="mx-1 btn btn-outline-primary default-text" data-value="<%= fileValue %>"
-                        style="font-size: 10px;">Default</a>
-                    <a href="" class="mx-1 btn btn-outline-primary" style="font-size: 10px;">Save</a>
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-start">
+                            <%= file.name %>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-end">
+                            <a href="/views/homepage" class="mx-1 btn btn-outline-info"
+                                style="font-size: 10px;">Back</a>
+
+                            <a class="mx-1 btn btn-outline-secondary clear-text" style="font-size: 10px;">Clear</a>
+
+                            <a class="mx-1 btn btn-outline-primary default-text" data-value="<%= fileValue %>"
+                                style="font-size: 10px;">Default</a>
+
+                            <a class="mx-1 btn btn-outline-primary save-text" data-id="<%= file._id %>"
+                                style="font-size: 10px;">Save</a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
             <div class="card-body">
                 <div class="input-group h-100">
@@ -43,6 +58,23 @@
                 var value = $(this).data("value");
 
                 $('#file-value').text(value);
+            });
+
+            $('.save-text').click(function () {
+                const id = $(this).data('id');
+                var myData = $("#file-value").val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "/api/edit/" + id,
+                    data: { myData: myData },
+                    success: function (response) {
+                        alert('Berhasil Ubah Data!');
+                    },
+                    error: function (error) {
+                        alert('Gagal mengirim file ke server!');
+                    }
+                });
             });
         });
     </script>

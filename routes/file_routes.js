@@ -9,7 +9,7 @@ route.get('/download/:id', downloadFile);
 route.post('/upload', single_file_uploaded, uploadFile);
 
 // perbarui
-route.put('/edit/:id', editFile);
+route.post('/edit/:id', editFile);
 
 // hapus
 route.delete('/delete/:id', deleteFile);

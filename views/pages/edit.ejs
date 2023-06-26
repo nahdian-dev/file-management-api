@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs') %>
+</head>
+
+<body>
+    <div class="container-fluid d-flex align-items-center justify-content-center"
+        style="background-color: aqua; height: 100vh;">
+
+        <div class="card w-100 h-75 mx-5">
+            <div class="card-header">
+                <div class="d-flex justify-content-end">
+                    <a href="/views/homepage" class="mx-1 btn btn-outline-info" style="font-size: 10px;">Back</a>
+                    <a class="mx-1 btn btn-outline-secondary clear-text" style="font-size: 10px;">Clear</a>
+                    <a class="mx-1 btn btn-outline-primary default-text" data-value="<%= fileValue %>"
+                        style="font-size: 10px;">Default</a>
+                    <a href="" class="mx-1 btn btn-outline-primary" style="font-size: 10px;">Save</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="input-group h-100">
+                    <textarea id="file-value" class="form-control" aria-label="With textarea">
+                        <%= fileValue %>
+                    </textarea>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        $.noConflict();
+
+        jQuery(document).ready(function ($) {
+            $('.clear-text').click(function () {
+                $('#file-value').text('');
+            });
+
+            $('.default-text').click(function () {
+                var value = $(this).data("value");
+
+                $('#file-value').text(value);
+            });
+        });
+    </script>
+
+    <%- include('../partials/js_link.ejs') %>
+</body>
+
+</html>

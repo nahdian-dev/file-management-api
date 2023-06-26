@@ -45,8 +45,7 @@ const uploadFile = asyncHandler(async (req, res) => {
 // @route PUT- /api/edit/:id
 // @access public
 const editFile = asyncHandler(async (req, res) => {
-
-})
+});
 
 // @desc hapus file
 // @route DELETE - /api/delete/:id

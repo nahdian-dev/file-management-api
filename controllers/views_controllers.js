@@ -1,5 +1,6 @@
 const File = require('../models/file_model');
 const asyncHandler = require('express-async-handler');
+const fs = require('fs');
 
 // @desc menampilkan menu utama
 // @route GET - /views/homepage
@@ -22,6 +23,11 @@ const homepage = async (req, res) => {
     res.render('pages/homepage', { data: data });
 };
 
+const edit = async (req, res) => {
+    const file = await File.findById(req.params.id);
+    const fileValue = fs.readFileSync(file.path, { encoding: 'utf-8' });
 
+    res.render('pages/edit', { fileValue: fileValue });
+}
 
-module.exports = { homepage };
+module.exports = { homepage, edit };

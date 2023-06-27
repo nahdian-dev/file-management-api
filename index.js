@@ -12,6 +12,10 @@ connectDB();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+  res.sendFile('/views/homepage.ejs', { root: __dirname });
+});
+
 // EJS template engine
 app.set('view engine', 'ejs');
 

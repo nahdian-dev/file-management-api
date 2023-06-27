@@ -12,12 +12,16 @@ connectDB();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+  res.sendFile('/views/homepage.ejs', { root: __dirname });
+});
+
 // EJS template engine
 app.set('view engine', 'ejs');
 
 // Routing
-app.use('/file-management-api/api', require('./routes/file_routes'));
-app.use('/file-management-api/views', require('./routes/views_route'));
+app.use('/api', require('./routes/file_routes'));
+app.use('/views', require('./routes/views_route'));
 
 // Error Handling
 app.use(routeNotFound);

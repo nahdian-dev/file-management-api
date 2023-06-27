@@ -1,0 +1,112 @@
+PERKENALAN
+
+=> ucapkan terimakasih atas kesempatan interview
+=> nama, nama panggilan, umur, lulusan, domisili
+=> pengalaman magang,
+	- lokasi
+	- jabatan
+=> tugas
+- Mengembangkan dan me-maintenance user-interface pada website belanjabareng.id 
+  dengan menggunakan Framework Bootstrap, serta HTML dan JavaScript dengan tujuan 
+  memastikan setiap user atau pengujung website dapat berinteraksi dengan mudah dan nyaman.
+
+- Mengintegrasikan dan menampilkan data yang telah disediakan baik pada database maupun REST API 
+  menggunakan kerangka kerja Laravel sehingga website dapat memberikan informasi yang lengkap 
+  terhadap user atau pengguna.
+
+KELEBIHAN & KEKURANGAN
+=> Kelebihan
+	- saya suka sekali dalam melakukan coding dan analisis data
+	seperti contoh beberapa tahun terakhir saya sedang mendalami
+	pemrograman android dengan menggunakan bahasa pemrograman flutter
+
+	untuk aplikasi yang pernah dibuat yaitu aplikasi al-quran sederhana
+	aplikasi ini bertujuan untuk menampilkan seluruh surah alquran
+	beserta bacaan-bacaannya kedalam aplikasi android
+
+        - selain itu saya juga bisa mengoperasikan MySQL untuk data analyst
+        terlebih saya memiliki pengalaman magang sebagai web developer
+        yang juga menggunakan MySQL saat bekerja.
+  
+=> Kekurangan
+	- saya adalah orang yang mudah terdriktasi, seperti mendengar 
+	  suara bising atau tergangu dengan smartphone yang untuk itu 
+	  saya perlu memperbaiki kekurangan itu tersebut
+	- hal ini pun berimbas pada kefokusan saya dalam bekerja dan belajar
+	- untuk itu saya pun mencoba untuk membatasi penggunaan aplikasi
+	  bahkan menghapusnya dan mendengarkan musik ketika bekerja.
+
+POTENSI GAJI
+=> berdasarkan riset yang telah saya lakukan sebelumnya untuk posisi ini,
+   sesuai juga dengan kompetensi dan skill yang saya miliki saya mengajukan
+   kompensasi di range 4-5 juta, semoga bpk/ibu berkenan untuk mempertimbangkan
+
+KENAPA PERUSAHAAN MEREKRUT ANDA
+=>  sesuai dengan background yang saya punya, saya berharap akan dapat berkontribusi
+    lebih untuk perusahaan. saat ini saya menguasai beberapa bahasa pemrograman serta
+    memiliki pengalaman magang sebagai web developer dimana saya dapat mengoperasikan
+    MySQL dimana hal tersebut dibutuhkan sebagai data analyst.
+
+KONTRIBUSI TERHADAP PERUSAHAAN
+=> Dalam 30 hari pertama, saya akan belajar tentang perusahaan serta memahami
+   lebih jauh tugas dan tanggung jawab posisi dalam perusahaan.
+=> Sehingga dalam beberapa hari kedepan saya akan mulai untuk menunjukan ide 
+   serta mengerjakan pekerjaan secara mandiri
+
+NGANGGUR SETELAH LULUS
+=> saya tidak bekerja selama hampir 1 tahun / setelah lulus, namun selama itu
+   saya memanfaatkan waktu untuk belajar hal hal baru terutama dalam dunia
+   pemrograman dan analisis data. Selain itu juga saya akhir ini sedang 
+   menggarap sebuah aplikasi android yang Insya Allah beberapa waktu kedepan
+   saya akan publikasikan ke playstore.
+
+KENAPA DATA ANALYST
+=> pekerjaan ini adalah pekerjaan yang memiliki propek cerah dimasa depan,
+   walaupun saya bukan lulusan dari statistika dan matematika, namun saya
+   rasa dengan kemampuan koding yang saya kuasai akan mampu mempermudah
+   saya untuk terjun didunia data analyst. Terlebih saya saat kuliah pernah
+   mengikuti webinar tentang data analyst.
+
+BERSEDIA KERJA DILUAR JAM KERJA
+=> saya akan memahami kondisi tersebut apabila hal ini urgent untuk dilakukan
+   namun apabila saya masih bisa mengerjakannya sesuai jam kerja, saya
+   akan berusaha mengerjakannya tepat waktu
+
+BERSEDIA MENGERJAKAN TUGAS TEMAN
+=> setelah saya selesai mengerjakan tugas utama yang harus dilakukan,
+   saya akan bersedia untuk mengerjakan sesuai dengan kapasitas saya
+
+PT.BCA
+=> PT Bank Central Asia Tbk adalah bank swasta terbesar di Indonesia. 
+   Bank ini didirikan pada 21 Februari 1957 dan pernah menjadi bagian penting dari Salim Group.
+   Sekarang bank ini dimiliki oleh salah satu grup produsen rokok terbesar keempat di Indonesia,
+   Djarum.
+
+HAL TERPENTING DALAM HIDUP
+=> Untuk hidup yang lebih aman dimasa depan tentu memerlukan perencanaan dan kerja keras saat ini. 
+   Misalnya saya berambisi untuk mulai berinvestasi dalam hal pendidikan. Pendidikan merupakan hal 
+   terpenting yang harus dimiliki manusia. Selain itu, dengan semakin ketatnya persaingan yang membuat 
+   saya termotivasi untuk bisa mencapai cita - cita saya menjadi seorang data analyst.
+
+======================
+
+PERTANYAAN
+
+== mengenai pekerjaan ===
+1. Untuk posisi data analyst, bpk/ibu bisa menjelaskan lebih detail
+   mengenai jobdesk pada posisi tersebut ?
+2. Apa tantangan terbesar yang akan dihadapi dalam posisi yang saya lamar ini?
+3. Bagaimana jenjang karir posisi ini ?
+4. Apa yang diharapkan oleh saya dalam beberapa bulan kedepan ?
+
+== mengenai lingkungan kerja ===
+1. Karakter apa yang bisa bertahan dan sukses di perusahaan serta karakter apa
+   yang bisa gagal atau resign pada perusahaan ?
+2. Apakah perusahaan menyediakan training atau program untuk mengembangkan kemampuan karyawannya?
+3. Bagaimana jam kerja di perusahaan ini?
+
+== mengenai rekrutmen ==
+1. Kapan bisa saya menerima hasil keputusan ?
+2. Jika saya diterima, kapan saya bisa memulai bekerja ?
+3. Jika saya berhalangan untuk mulai di tanggal yang ditentukan, 
+   apakah ada batas waktu toleransi yang diberikan oleh perusahaan?

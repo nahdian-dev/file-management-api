@@ -12,10 +12,6 @@ connectDB();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-  res.sendFile('/views/homepage.ejs', { root: __dirname });
-});
-
 // EJS template engine
 app.set('view engine', 'ejs');
 
@@ -28,5 +24,5 @@ app.use(routeNotFound);
 app.use(errorHandler);
 
 app.listen(port, () => {
-    console.log(`- Server are listening on port: ${port}`);
+  console.log(`- Server are listening on port: ${port}`);
 });

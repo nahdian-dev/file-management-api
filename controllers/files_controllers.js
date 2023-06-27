@@ -23,21 +23,19 @@ const uploadFile = asyncHandler(async (req, res) => {
     if (!req.file) {
         res.status(400);
         throw new Error('Nothing to Upload!');
-    }
+    };
 
-    File.create({
-        name: req.file.filename,
-        size: req.file.size,
-        path: req.file.path,
-        createdAt: Date.now()
-    });
-
-    res.json({
-        message: 'Berhasil upload file!',
-        name: req.file.filename,
-        size: req.file.size,
-        path: req.file.path,
-        createdAt: Date.now()
+    File.create(
+        {
+            name: req.file.filename,
+            size: req.file.size,
+            path: req.file.path,
+            createdAt: Date.now()
+        }
+    ).then((value) => {
+        res.status(200).redirect('/views/homepage');
+    }).catch((err) => {
+        res.status(400).redirect('/views/homepage');
     });
 });
 

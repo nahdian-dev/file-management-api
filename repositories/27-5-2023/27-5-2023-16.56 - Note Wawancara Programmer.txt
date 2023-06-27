@@ -1,0 +1,205 @@
+================= PERKENALAN ==========================
+
+=> ucapkan terimakasih atas kesempatan interview
+=> nama, nama panggilan, umur, lulusan, domisili
+=> pengalaman magang,
+	- lokasi
+	- jabatan
+
+=> Kontribusi
+   Berkontribusi dalam pengembangan website dimana produk perusahaan yaitu belanjabareng 
+   mendapatkan penghargaan juara ketiga dalam KMI Expo X 2019 dari Kompetisi Startup Summit Mahasiswa Indonesia 
+   di Politeknik Negeri Batam.
+
+=> tugas
+   Bertanggung jawab mengembangkan user-interface pada website belanjabareng.id menggunakan JavaScript serta Bootstrap Framework, 
+   serta mengintegrasikan data dari REST API menggunakan Laravel dengan tujuan memastikan setiap users 
+   dapat berinteraksi dengan mudah dan nyaman.
+
+================= KELEBIHAN ==========================
+
+Sebagai seorang yang merupakan lulusan sistem informasi, saya suka melakukan suatu hal tentang pemrograman seperti coding.
+Saat ini saya menguasai Flutter, saya dapat :
+	- melakukan HTTP Request,
+	- bekerja menggunakan firebase
+	- saya dapat mengoperasikan git
+	- saya juga paham tentang scrum methodologi
+	- selain itu saya juga dapat membuat REST API menggunakan NodeJS dan MySQL
+
+================= KEKURANGAN ==========================
+
+Saya adalah orang yang mudah terdriktasi, seperti mendengar suara bising dan hal ini pun berimbas pada kefokusan saya dalam bekerja.
+Untuk mengurangi suara bising tersebut saya memerlukan sebuah earphone untuk mendengarkan musik ketika bekerja.
+
+Selain itu, saya juga lemah dalam hal public speaking. Ketika public speaking saya masih bebicara terbata bata untuk menghadapi audience banyak.
+
+Saya juga merupakan pribadi yang kurang memiliki skill kepemimpinan. Untuk itu ketika saya dapat diberikan kesempatan bekerja, 
+saya mencoba mempelajari bagaimana atasan - atasan saya dapat memimpin bawahannya untuk bekerja.
+
+================= KENAPA PROGRAMMER / SISTEM INFROMASI ==========================
+
+Pekerjaan ini adalah pekerjaan yang memiliki propek cerah dimasa depan, sebab programmer bisa bekerja secara independen dan perusahaan.
+Selain itu, menjadi programmer bisa mengasah skill analyst seperti lebih teliti memahami setiap permasalahan yang terjadi saat pengkodingan.
+
+================= KENAPA PERUSAHAAN MEREKRUT ANDA ==========================
+
+Sesuai dengan background yang saya punya, saya berharap akan dapat berkontribusi lebih untuk perusahaan.
+Saat ini saya menguasai beberapa bahasa pemrograman dan sesuai dengan point point keahlian yang saya sebutkan diawal
+[SEBUTKAN POINT2NYA] untuk itu saya berharap bisa berkontribusi untuk perusahaan dan mengembangkan skill saya.
+
+================= POTENSI GAJI ==========================
+
+Berdasarkan riset yang telah saya lakukan sebelumnya untuk posisi ini, sesuai juga dengan kompetensi dan skill yang saya miliki saya mengajukan
+kompensasi di range 4-5 juta, semoga bpk/ibu berkenan untuk mempertimbangkan.
+
+================= KONTRIBUSI TERHADAP PERUSAHAAN ==========================
+
+Dalam 30 hari pertama, saya akan belajar tentang perusahaan serta memahami lebih jauh tugas dan tanggung jawab posisi dalam perusahaan.
+Sehingga dalam beberapa hari kedepan saya akan mulai untuk menunjukan ide serta mengerjakan pekerjaan secara mandiri.
+
+================= NGANGGUR SETELAH LULUS ==========================
+
+Saya tidak bekerja selama hampir 1 tahun / setelah lulus, namun selama itu saya memanfaatkan waktu untuk belajar hal hal baru terutama dalam dunia
+pemrograman. Selain itu juga saya akhir ini sedang menggarap sebuah aplikasi android yang Insya Allah beberapa waktu kedepan saya akan publikasikan 
+
+================= BERSEDIA KERJA DILUAR JAM KERJA ==========================
+
+Saya akan memahami kondisi tersebut apabila hal ini urgent untuk dilakukan namun apabila saya masih bisa mengerjakannya sesuai jam kerja, 
+saya akan berusaha mengerjakannya tepat waktu.
+
+================= BERSEDIA MENGERJAKAN TUGAS TEMAN ==========================
+
+Setelah saya selesai mengerjakan tugas utama yang harus dilakukan, saya akan bersedia untuk mengerjakan sesuai dengan kapasitas saya
+
+
+================= HAL TERPENTING DALAM HIDUP ==========================
+
+=> Untuk hidup yang lebih aman dimasa depan tentu memerlukan perencanaan dan kerja keras saat ini. 
+   Misalnya saya berambisi untuk mulai berinvestasi dalam hal pendidikan. Pendidikan merupakan hal 
+   terpenting yang harus dimiliki manusia. Selain itu, dengan semakin ketatnya persaingan yang membuat 
+   saya termotivasi untuk bisa mencapai cita - cita saya menjadi seorang data analyst.
+
+================= PRESTASI TERBAIK ==========================
+
+Pada masa perkuliahan, saya berhasil untuk lulus tepat sesuai tujuan saya yaitu masa kuliah 3,5 tahun serta IPK juga sesuai harapan yaitu 3.81.
+
+================= PENGALAMAN PALING MEMBANGGAKAN ==========================
+
+Berkontribusi dalam pengembangan website dimana produk perusahaan yaitu belanjabareng 
+mendapatkan penghargaan juara ketiga dalam KMI Expo X 2019 dari Kompetisi Startup Summit Mahasiswa Indonesia 
+di Politeknik Negeri Batam.
+
+================= PENGALAMAN BURUK ==========================
+
+Saya pernah mengerjakan projek aplikasi dengan client meminta untuk menambahkan 4 fitur baru, namun saat itu saya hanya bisa menyelesaikan 1 fitur saja.
+Hal ini disebabkan karena client tidak menerapkan design pattern pada projeknya. Hal ini membuat saya bingung untuk lanjut mengerjakannya
+terlebih dengan kondisi file yang sulit dibaca.
+Pada kejadian tersebut pun saya kedepannya untuk bisa berkoordinasi dengan lebih baik lagi dengan client untuk membicarakan 
+hal - hal yang lebih detail lagi.
+
+================= ASPEK PENAWARAN KERJA ==========================
+
+- Aspek memiliki lingkungan kerja yang baik, bagi saya suasana kantor yang kondusif dapat mamacu produktivitas kerja seorang karyawan.
+- Mempertimbangkan untuk mendapatkan hak libur dan cuti. Bagi saya hak cuti di perlukan untuk keadaan darurat ataupun urusan kelurga.
+
+================== SCRUM METHOD ====================
+
+Sebuah metode yang termasuk dalam metode Agile tentang bagaimana cara mengembangkan dan mengelola sebuah projek.
+Agile => sebuah metode / praktik berdasarkan nilai atau prinsip pada agile manifesto.
+
+agile manifesto => 
+Prioritas utama kami adalah memuaskan klien
+dengan menghasilkan perangkat lunak yang bernilai
+secara dini dan rutin.
+
+Menyambut perubahan kebutuhan, walaupun terlambat
+dalam pengembangan perangkat lunak.
+Proses Agile memanfaatkan perubahan untuk
+keuntungan kompetitif klien.
+
+cara implementasi scrum :
+1. tentukan tim sprint
+2. tentukan panjang lamanya sprint
+3. mulai jalankan sprint
+	dalam sprint
+
+================== UNIT TEST =========================
+
+Jenis software testing yang dilakukan untuk menguji suatu bagian atau komponen software.
+
+berguna untuk :
+	membantu memperbaiki bug
+	membantu developer untuk memahami basis kode dan memungkinkan melakukan perubahan dengan cepat
+	dokumentasi proyek
+
+black box testing :
+	pengujian dilakukan untuk meninjau input output 
+
+whitebox testing :
+	dilakukan untuk menguji struktur internal, desain, fungsi, dan detail implementasi sebuah aplikasi.
+	cth: loop, data flow
+
+================ BUSSINESS PROCESS ===================
+Sekumpulan aktivitas / pekerjaan yang memiliki keterkaitan satu sama lain untuk mencapai tujuan tertentu.
+manfaat :
+	menghasilkan pekerjaan yang konsisten dan berkualitas
+	membantu dalam mengidentifikasi pekerjaan
+	
+4 komponen utama proses bisnis :
+	pemodelan
+		tujuannya untuk mendesain dan mendefinisikan struktur dari setiap proses bisnis secara grafis.
+	pengintegrasian
+		setiap element dari proses dapat saling berkolaborasi dan bertukar informasi
+	pengawasan
+		dapat mengawasi dan mengkntrol proses bisnis yang sdng berjalan
+	optimalisasi
+		tujuannya untuk menganalisa dan memonitor suatu proses bisnis.
+
+================= ERP =================================
+
+sistem yang digunakan oleh perusahaan untuk mengintegrasikan seluruh sumber daya perusahaan.
+fungsi:
+	1. integrasi antar departemen
+	2. meningkatkan akurasi proses bisnis
+	3. memudahkan dalam melakukan monitoring
+
+4 area yang digabung :
+ 	1. marketing dan sales
+		mencatat order dari customer
+	2. supply chain management
+		mengatur dan menjadwalkan pengiriman
+	3. accounting dan staff
+		mencatat segala transaksi penerimaan, pengeluaran
+	4. human resources
+		bagian penjadwalan karyawan
+
+manfaat :
+	1. satu sumber laporan yang terpusat, untuk membuat analisa dan statistik menjadi lebih efektif
+
+================== PT ==========================
+
+Melalui riset yang telah saya lakukan Falinwa Indonesia merupakan perusahaan berbasis IT yang berpengalaman lebih dari 6 tahun dalam analisis, 
+dan manajemen projek.
+Falinwa Indonesia juga berkomitmen untuk menjamin keberhasilan implementasi ERP, sekaligus juga berhasil menciptakan produk Cluedoo
+
+================= PERTANYAAN ==========================
+
+TEKNIS :
+
+1. Ketika saya bisa bekerja, bpk/ibu bisa menjelaskan lebih detail
+   mengenai jobdesk pada posisi programmer ?
+2. Apa tantangan terbesar yang akan dihadapi dalam posisi yang saya lamar ini?
+3. Bagaimana jenjang karir posisi ini ?
+4. Apa yang diharapkan oleh saya dalam beberapa bulan kedepan ?
+
+NON TEKNIS :
+1. Karakter apa yang bisa bertahan dan sukses di perusahaan serta karakter apa
+   yang bisa gagal atau resign pada perusahaan ?
+2. Apakah perusahaan menyediakan training atau program untuk mengembangkan kemampuan karyawannya?
+3. Bagaimana jam kerja di perusahaan ini?
+
+REKRUTMEN :
+1. Kapan bisa saya menerima hasil keputusan ?
+2. Jika saya diterima, kapan saya bisa memulai bekerja ?
+3. Jika saya berhalangan untuk mulai di tanggal yang ditentukan, 
+   apakah ada batas waktu toleransi yang diberikan oleh perusahaan?

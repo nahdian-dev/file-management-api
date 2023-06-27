@@ -6,7 +6,6 @@
 </head>
 
 <body>
-
     <div class="container-fluid d-flex justify-content-center align-items-center"
         style="height: 100vh; background-color: aqua;">
         <div class="container card w-100" style="height: 90%;">
@@ -17,7 +16,7 @@
                 <div class="col">
                     <div class="d-flex justify-content-center align-items-center h-100">
                         <div class="row w-75">
-                            <form action="/api/upload" method="post" enctype="multipart/form-data">
+                            <form action="/api/upload" class="form-upload" method="post" enctype="multipart/form-data">
                                 <div class="col">
                                     <input class="form-control" type="file" id="formFile" name="uploaded_file">
                                     <label for="formFile" class="form-label" style="font-size: 12px;">*hanya
@@ -25,9 +24,8 @@
                                 </div>
 
                                 <div class="col mt-3">
-                                    <button type="submit" class="btn btn-primary w-100">Upload</button>
+                                    <button type="submit" class="btn btn-primary btn-upload-file w-100">Upload</button>
                                 </div>
-
                             </form>
                         </div>
                     </div>
@@ -68,7 +66,8 @@
                                                         <div class="modal-content">
                                                             <!-- Header Modal -->
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLabel">Delete
+                                                                <h5 class="modal-title" id="exampleModalLabel">
+                                                                    Delete
                                                                     Data</h5>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
@@ -76,8 +75,10 @@
 
                                                             <!-- Konten Modal -->
                                                             <div class="modal-body">
-                                                                <p>Are you sure want to delete <span
-                                                                        id="modalIdValue"></span> ?</p>
+                                                                <p>Are you sure want to delete
+                                                                    <span id="modalIdValue"></span>
+                                                                    ?
+                                                                </p>
                                                             </div>
 
                                                             <!-- Footer Modal -->

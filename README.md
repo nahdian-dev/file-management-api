@@ -8,9 +8,7 @@ Sebagai ringkasan:
 
 ## Daftar Isi
 - [Instalasi](#instalasi)
-- [Penggunaan](#penggunaan)
-- [Kontribusi](#kontribusi)
-- [Lisensi](#lisensi)
+- [Preview](#preview)
 
 ## Instalasi
 Berikut adalah langkah-langkah untuk menginstal proyek ini:
@@ -30,4 +28,6 @@ npm install  body-parser dotenv ejs express express-async-handler mongoose multe
 6. Jalankan aplikasi dengan perintah:
 npm run dev
 
-====== PREVIEW =====
+## Preview 
+![Preview 1](assets/images/preview-1.png "Preview 1")
+![Preview 2](assets/images/preview-2.png "Preview 2")

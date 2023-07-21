@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 
 // Routing
 app.use('/api', require('./routes/file_routes'));
-app.use('/views', require('./routes/views_route'));
+app.use('/', require('./routes/views_route'));
 
 // Error Handling
 app.use(routeNotFound);

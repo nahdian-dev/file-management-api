@@ -1,6 +1,6 @@
 const File = require('../models/file_model');
-const asyncHandler = require('express-async-handler');
 const fs = require('fs');
+const path = require('path');
 
 // @desc menampilkan menu utama
 // @route GET - /views/homepage
@@ -20,7 +20,8 @@ const homepage = async (req, res) => {
             console.log(error);
         });
 
-    res.render('pages/homepage', { data: data });
+    res.render('homepage', { data: data });
+    // res.render('pages/homepage', { data: data });
 };
 
 const edit = async (req, res) => {

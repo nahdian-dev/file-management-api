@@ -1,9 +1,11 @@
 const express = require('express');
-const dotenv = require('dotenv').config();
+const path = require('path');
+const bodyParser = require('body-parser');
+require('dotenv').config();
+
 const connectDB = require('./connection/file_management_connection');
 const errorHandler = require('./middleware/error_handler');
 const routeNotFound = require('./middleware/route_not_found');
-const bodyParser = require('body-parser');
 
 const app = express();
 const port = process.env.PORT || 8001;
@@ -14,6 +16,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // EJS template engine
 app.set('view engine', 'ejs');
+
+app.set('views', path.join(__dirname, 'views', 'pages'));
 
 // Routing
 app.use('/api', require('./routes/file_routes'));

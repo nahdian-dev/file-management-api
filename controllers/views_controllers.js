@@ -8,6 +8,11 @@ const path = require('path');
 const homepage = async (req, res) => {
     let data = [];
 
+    function partials(file) {
+        const dir = path.join(__dirname, '..', 'views', 'partials', file);
+        return fs.readFileSync(dir, 'utf-8');
+    }
+
     await File.find()
         .then((result) => {
             const array = result.map(data => data.toObject());
@@ -20,7 +25,7 @@ const homepage = async (req, res) => {
             console.log(error);
         });
 
-    res.render('homepage', { data: data });
+    res.render('homepage', { data, partials });
     // res.render('pages/homepage', { data: data });
 };
 

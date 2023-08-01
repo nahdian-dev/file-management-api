@@ -1,7 +1,4 @@
-const fs = require('fs');
-
 const fileServices = require('../services/file.services');
-const File = require('../models/file.model');
 const utility = require('../utilities/utility');
 
 // @desc menampilkan menu utama
@@ -9,14 +6,14 @@ const utility = require('../utilities/utility');
 // @access public
 const homepage = async (req, res) => {
     const data = await fileServices.getAllFile();
-    const partials = utility.partials;
+    const partials = utility.accessPartialsViews;
 
     return res.render('homepage', { data, partials });
 };
 
 const edit = async (req, res) => {
-    const file = await File.findById(req.params.id);
-    const fileValue = fs.readFileSync(file.path, { encoding: 'utf-8' });
+    const file = await fileServices.getFileById(req.params.id);
+    const fileValue = utility.accessFileLocalRepo(file.name);
 
     res.render('edit', { file: file, fileValue: fileValue });
 }

@@ -1,20 +1,21 @@
-const asyncHandler = require('express-async-handler');
-const File = require('../models/file.model');
 const fs = require('fs');
+const path = require('path');
+const asyncHandler = require('express-async-handler');
+
+const fileServices = require('../services/file.services');
+const File = require('../models/file.model');
 
 // @desc download spesifik file
 // @route GET- /api/download/:id
 // @access public
-const downloadFile = asyncHandler(async (req, res) => {
-    const data = await File.findById(req.params.id);
+const downloadFile = async (req, res) => {
+    const fileData = await fileServices.getFileById(req.params.id);
 
-    res.download(data.path, (err) => {
-        if (err) {
-            res.status(400);
-            throw new Error(err);
-        }
-    });
-});
+    const folder = fileData.name.substring(0, 9);
+    const localPathFile = path.join(__dirname, '..', '..', 'repositories', folder, fileData.name);
+
+    return res.download(localPathFile);
+};
 
 // @desc unggah file
 // @route POST- /api/upload
@@ -50,7 +51,7 @@ const editFile = asyncHandler(async (req, res) => {
     fs.readFile(get_file_data.path, 'utf-8', (err, data) => {
         if (err) {
             console.log(err);
-        };
+        }
 
         const result = data.replace(data, newData);
 

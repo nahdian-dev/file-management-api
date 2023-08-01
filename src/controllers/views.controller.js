@@ -15,7 +15,7 @@ const edit = async (req, res) => {
     const file = await fileServices.getFileById(req.params.id);
     const fileValue = utility.accessFileLocalRepo(file.name);
 
-    res.render('edit', { file: file, fileValue: fileValue });
+    return res.render('edit', { file: file, fileValue: fileValue });
 }
 
 module.exports = { homepage, edit };

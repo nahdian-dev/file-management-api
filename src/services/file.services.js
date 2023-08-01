@@ -1,4 +1,5 @@
 const File = require('../models/file.model');
+const CustomApiError = require('../utilities/CustomApiError');
 
 exports.getAllFile = async () => {
     try {
@@ -16,6 +17,6 @@ exports.getFileById = async (id) => {
         const file = await File.findById(id);
         return file;
     } catch (error) {
-        console.error(error);
+        throw new CustomApiError(400, error);
     }
 };

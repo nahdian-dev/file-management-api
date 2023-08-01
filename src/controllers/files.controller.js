@@ -1,5 +1,5 @@
 const asyncHandler = require('express-async-handler');
-const File = require('../models/file_model');
+const File = require('../models/file.model');
 const fs = require('fs');
 
 // @desc download spesifik file
@@ -20,35 +20,23 @@ const downloadFile = asyncHandler(async (req, res) => {
 // @route POST- /api/upload
 // @access public
 const uploadFile = asyncHandler(async (req, res) => {
+    if (!req.file) {
+        res.status(400);
+        throw new Error('Nothing to upload');
+    }
+
     try {
-        const createFile = await File.create({
+        await File.create({
             name: req.file.filename,
             size: req.file.size,
             path: req.file.path,
             createdAt: Date.now()
         });
 
-        res.status(200).redirect('/views/homepage');
+        res.status(200).redirect('homepage');
     } catch (error) {
-        throw new Error('Nothing to Upload!');
-
+        throw new Error(`Error when upload file: ${error}`);
     }
-
-    if (!req.file) {
-        res.status(400);
-    };
-
-    // File.create(
-    //     {
-    //         name: req.file.filename,
-    //         size: req.file.size,
-    //         path: req.file.path,
-    //         createdAt: Date.now()
-    //     }
-    // ).then((value) => {
-    // }).catch((err) => {
-    //     res.status(400).redirect('/views/homepage');
-    // });
 });
 
 // @desc perbarui file

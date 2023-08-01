@@ -1,0 +1,30 @@
+I 	= background
+II 	= harapan / aspirasi karier
+III	= Kemampuan Relevan
+
+
+=== Flutter ===
+
+I 	- Lulusan S1 dari Universitas Nasional dengan fokus pada bidang Sistem Informasi.
+II	- Menyukai hal dengan berfikir secara logika serta memiliki aspirasi untuk bekerja pada bidang programmer.
+III	- Menguasai pemrograman android dengan menggunakan Flutter serta Bloc untuk state management.
+
+Bachelor of information systems degree. 
+Likes to think logically and has aspirations to work in programmers. 
+Familiar with android programming using Flutter and BLoC for State Management.
+
+=== Data analisis ===
+
+I 	- Lulusan S1 dari Universitas Nasional dengan fokus pada bidang Sistem Informasi.
+II	- Senang melakukan analisa terhadap suatu hal serta memiliki aspirasi untuk bekerja sebagai data analyst.
+III	- Menguasai tools Microsoft Excel serta MySQL Workbench dan dapat melakukan visualisasi data menggunakan Tableau.
+
+Bachelor of information systems degree. 
+Like to analyze things and have aspirations to work as a data analyst. 
+Familiar with Microsoft Excel and MySQL Workbench tools and can perform data visualization using Tableau.
+
+=== Networking ===
+
+I 	- Lulusan S1 dari Universitas Nasional dengan fokus pada bidang Sistem Informasi.
+II	- Senang melakukan troubleshooting terhadap suatu masalah serta memiliki aspirasi untuk bekerja sebagai Network Engineer.
+III	- 

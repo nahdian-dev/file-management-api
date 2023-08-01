@@ -1,6 +1,6 @@
 const route = require('express').Router();
-const single_file_uploaded = require('../controllers/upload_controllers');
-const { downloadFile, uploadFile, editFile, deleteFile } = require('../controllers/files_controllers');
+const single_file_uploaded = require('../controllers/upload.controller');
+const { downloadFile, uploadFile, editFile, deleteFile } = require('../controllers/files.controller');
 
 // unduh
 route.get('/download/:id', downloadFile);

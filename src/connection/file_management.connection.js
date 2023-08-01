@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-const dotenv = require('dotenv').config();
 const asyncHandler = require('express-async-handler');
+const config = require('../config/config');
 
 const connectDB = asyncHandler(async () => {
     try {
-        const conn = await mongoose.connect(process.env.CONNECTION_STRING);
+        const conn = await mongoose.connect(config.value.CONNECTION_STRING);
         console.log(`- Connected to DB: ${conn.connection.name}`);
     } catch (error) {
         console.log(`- Connect DB failure : ${error}`);

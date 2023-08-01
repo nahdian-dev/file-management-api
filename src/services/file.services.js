@@ -20,3 +20,18 @@ exports.getFileById = async (id) => {
         throw new CustomApiError(400, error);
     }
 };
+
+exports.createFileToDB = async (filename, size, path) => {
+    try {
+        await File.create({
+            name: filename,
+            size: size,
+            path: path,
+            createdAt: Date.now()
+        });
+
+        return { statusCode: 200 };
+    } catch (error) {
+        throw new CustomApiError(400, `Error when upload file: ${error}`);
+    }
+};

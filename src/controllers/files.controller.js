@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const asyncHandler = require('express-async-handler');
 
+const CustomApiError = require('../utilities/CustomApiError');
 const fileServices = require('../services/file.services');
 const File = require('../models/file.model');
 
@@ -20,25 +21,19 @@ const downloadFile = async (req, res) => {
 // @desc unggah file
 // @route POST- /api/upload
 // @access public
-const uploadFile = asyncHandler(async (req, res) => {
+const uploadFile = async (req, res) => {
     if (!req.file) {
-        res.status(400);
-        throw new Error('Nothing to upload');
+        throw new CustomApiError(400, `Please choose file first!`)
     }
 
-    try {
-        await File.create({
-            name: req.file.filename,
-            size: req.file.size,
-            path: req.file.path,
-            createdAt: Date.now()
-        });
+    const { statusCode } = await fileServices.createFileToDB(req.file.filename, req.file.size, req.file.path);
 
-        res.status(200).redirect('homepage');
-    } catch (error) {
-        throw new Error(`Error when upload file: ${error}`);
+    if (statusCode !== 200) {
+        throw new CustomApiError(400, `Error when upload file`);
     }
-});
+
+    return res.redirect('/');
+}
 
 // @desc perbarui file
 // @route PUT- /api/edit/:id
